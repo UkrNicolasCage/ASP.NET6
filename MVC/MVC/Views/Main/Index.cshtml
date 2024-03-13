@@ -1,0 +1,55 @@
+﻿@page
+@model MVC.Views.IndexModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            
+        }
+        
+        input[type="text"],
+        input[type="number"],
+        input[type="tel"] {
+            width: 20;
+            padding: 8px;
+            margin-bottom: 20px;
+            
+        }
+        button {
+            background-color: blue;
+            color: white;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the pizza ordering website. Please enter your details for registration: </h1>
+    <form action="ProductCountSelection" method="post">
+        <div>
+            <label for="name">Your name:</label>
+            <input type="text" id="name" name="Name" required>
+        </div>
+        <div>
+            <label for="age">Your age:</label>
+            <input type="number" id="age" name="Age" required>
+        </div>
+        <div>
+            <label for="numberPhone">Your phone number:</label>
+            <input type="tel" id="numberPhone" name="NumberPhone" required>
+        </div>
+        <div>
+            <button type="submit">Next</button>
+        </div>
+    </form>
+</body>
+</html>

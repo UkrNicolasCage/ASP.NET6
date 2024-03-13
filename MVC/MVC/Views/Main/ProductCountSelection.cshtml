@@ -1,0 +1,45 @@
+﻿@page
+@model MVC.Views.Main.ProductCountSelectionModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="tel"] {
+            width: 20;
+            padding: 8px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form action="ProductSelection" method="post">
+        <div>
+            <h1>How many pizzas would you like to order?</h1>
+           
+            <input type="number" id="count" name="Count" required>
+        </div>
+        <div>
+            <button type="submit">Next</button>
+        </div>
+    </form>
+</body>
+</html>
